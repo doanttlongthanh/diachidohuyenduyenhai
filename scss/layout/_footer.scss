@@ -1,0 +1,32 @@
+@use "../abstracts";
+
+%flexItemsCenter {
+    display: flex;
+    align-items: center;
+}
+
+.footer__inner {
+    margin-top: 30px;
+    height: 100%;
+    background: #0058c0;
+}
+
+.footer__desc {
+    padding: 20px 0px 20px 20px;
+    color: #ebebeb;
+
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 170%;
+    font-family: Arial, sans-serif;
+    // text-align: justify;
+
+    @include abstracts.screen(lg) {
+        font-size: 1.4rem;
+        // font-weight: bold;
+    }
+    @include abstracts.screen(md) {
+        font-size: 1rem;
+        // font-weight: bold;
+    }
+}
